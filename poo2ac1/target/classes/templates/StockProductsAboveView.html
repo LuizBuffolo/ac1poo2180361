@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCK PRODUCTS ABOVE VIEW</title>
+</head>
+<body>
+    <h1>PRODUTOS EM ESTOQUE ACIMA DE VALOR</h1>
+    <table>
+        <tr th:each="produto: ${Produtos}">
+        <td th:text="${produto?.getCode()}" />
+        <td th:text="${produto?.getName()}" />
+        <td th:text="${produto?.getValue()}" />
+        <td th:text="${produto?.getStock()}" />
+    </tr>
+    </table>
+</body>
+</html>

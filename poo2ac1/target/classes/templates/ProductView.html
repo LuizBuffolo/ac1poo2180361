@@ -1,0 +1,16 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT VIEW</title>
+</head>
+<body>
+    <h1>PRODUTO</h1>
+    <p th:text="${Produto?.getCode()}"></p>
+    <p th:text="${Produto?.getName()}"></p>
+    <p th:text="${Produto?.getValue()}"></p>
+    <p th:text="${Produto?.getStock()}"></p>
+</body>
+</html>
